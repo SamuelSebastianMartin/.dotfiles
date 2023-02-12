@@ -138,7 +138,6 @@ ex ()
 
 ##################################
 # Added by Sam
-#
+alias ll='ls -goshp --group-directories-first'
 alias calcurse='cd ~/.sync/calcurse; calcurse'
-alias lynx='lynx -accept_all_cookies -scrollbar'
 alias ?='ducksearch'

@@ -3,7 +3,7 @@
 #     FOR REMOTE CONNECTIONS & DOCKER    #
 #                                        #
 #  * Status bar is differerent colour    #
-#  * Prefix is default  ^b  [not ^a]     #
+#  * Prefix is default  C-b  [not C-a]   #
 #  * Other commands are as tmux.conf     #
 #                                        #
 ##########################################
@@ -21,7 +21,7 @@ unbind r
 bind r source-file ~/.tmux.conf \; display "Reloaded ~/.tmux.conf"
 
 # double-tap prefix to toggle window
-bind-key C-a last-window
+bind-key C-b last-window
 
 # Vertical and horizontal splits
 # unbind % # vertical split default
@@ -58,5 +58,5 @@ set -g pane-border-style fg=black # non-active panes
 set -g pane-active-border-style fg=black
 
 # Set colour-bar
-set -g status-bg colour140
+set -g status-bg colour5
 

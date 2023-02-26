@@ -111,7 +111,21 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
-#
+###########################################################
+##         Set values for bash-history file              ##
+###########################################################
+
+export HISTSIZE=10000
+export HISTFILESIZE=100000
+
+# Don't save repeaded commands
+export HISTCONTROL=ignordups
+
+# Don't save commands that start with a space
+export HISTCONTROL=ignorspace 
+
+export HISTIGNORE="exit;pwd;ls;ls -la"  # Don't save frequent commands
+
 # # ex - archive extractor
 # # usage: ex <file>
 ex ()

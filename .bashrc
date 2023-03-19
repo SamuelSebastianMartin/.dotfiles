@@ -155,3 +155,5 @@ ex ()
 alias ll='ls -goshp --group-directories-first'
 alias calcurse='cd ~/.sync/calcurse; calcurse'
 alias ?='ducksearch'
+alias cm=cmt
+alias uc=uncmt

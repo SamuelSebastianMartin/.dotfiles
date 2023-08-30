@@ -2,7 +2,14 @@
 # ~/.bashrc
 #
 
+# If not interacive mode (i.e. not have -i flag), exit 
 [[ $- != *i* ]] && return
+# $- contains shell flags.
+
+# Use vi mode for bash. This will give 'insert' mode and 'normal'
+# mode to the shell. So, for example, ^p will not give the previous
+# command any more; use up-arrow or ^[ k  - Normal mode + 'k'. etc.
+set -o vi
 
 colors() {
 	local fgc bgc vals seq0
@@ -31,6 +38,7 @@ colors() {
 	done
 }
 
+# Source [ . ] the bash-completion file, if it is readable.
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 # Change the window title of X terminals
@@ -90,12 +98,14 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-#alias cp="cp -i"                          # confirm before overwriting something
+alias cp="cp -i"                          # confirm before overwriting something
 #alias df='df -h'                          # human-readable sizes
 #alias free='free -m'                      # show sizes in MB
 #alias np='nano -w PKGBUILD'
 #alias more=less
 
+# Send X server stdout and stderr to dev/null, so reducing
+# command verbosity.
 xhost +local:root > /dev/null 2>&1
 
 # Bash won't get SIGWINCH if another process is in the foreground.

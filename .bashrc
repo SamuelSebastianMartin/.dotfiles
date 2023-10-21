@@ -167,3 +167,8 @@ alias calcurse='cd ~/.sync/calcurse; calcurse'
 alias ?='ducksearch'
 alias cm=cmt
 alias uc=uncmt
+alias mutt=neomutt
+
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'

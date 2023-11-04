@@ -142,6 +142,6 @@ set noswapfile
 set nowritebackup
 
 " Let vim recognies groff files for syntax highlighting
-U BufNewFile,BufRead *.groff set filetype=groff
-U BufNewFile,BufRead *.mom set filetype=groff
-U BufNewFile,BufRead *.ms set filetype=groff
+au BufNewFile,BufRead *.groff set filetype=groff
+au BufNewFile,BufRead *.mom set filetype=groff
+au BufNewFile,BufRead *.ms set filetype=groff

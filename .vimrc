@@ -122,6 +122,16 @@ hi SpellBad cterm=underline ctermfg=brown
 hi clear SpellCap "un-capitalised words
 hi SpellCap cterm=underline ctermfg=blue
 
+"-------------- RECOGNIES .ms AS GROFF ------------------"
+
+" Even though groff is just ailased to nroff in
+" $VIMRUNTIME/syntax/groff.vim
+"
+augroup groff_filetype
+    autocmd!
+    autocmd BufNewFile,BufRead *.ms set filetype=groff
+augroup END
+
 
 "----------------------- MISC ------------------------------"
 

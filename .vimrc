@@ -150,3 +150,8 @@ highlight NonText guifg=bg
 set nobackup
 set noswapfile
 set nowritebackup
+
+" Let vim recognies groff files for syntax highlighting
+au BufNewFile,BufRead *.groff set filetype=groff
+au BufNewFile,BufRead *.mom set filetype=groff
+au BufNewFile,BufRead *.ms set filetype=groff

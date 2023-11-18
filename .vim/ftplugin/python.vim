@@ -1,3 +1,7 @@
+" Enable folding
+set foldenable
+set foldmethod=indent
+
 "Include a vertical line at 79 characters wide
 setlocal colorcolumn=79
 highlight ColorColumn ctermbg=DarkGrey

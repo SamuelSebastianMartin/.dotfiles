@@ -117,10 +117,20 @@ highlight CursorLine ctermbg=black
 
 
 " Stop bright highlights of spell check
+
+set spelllang=en_uk
+
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=brown
 hi clear SpellCap "un-capitalised words
 hi SpellCap cterm=underline ctermfg=blue
+
+ if &spelllang == 'en_uk'
+   hi clear SpellBad
+   hi SpellBad cterm=underline ctermfg=brown
+   hi clear SpellCap "un-capitalised words
+   hi SpellCap cterm=underline ctermfg=blue
+ endif
 
 "-------------- RECOGNIES .ms AS GROFF ------------------"
 

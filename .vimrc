@@ -118,14 +118,14 @@ highlight CursorLine ctermbg=black
 
 " Stop bright highlights of spell check
 
-set spelllang=en_uk
+set spelllang=en_gb
 
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=brown
 hi clear SpellCap "un-capitalised words
 hi SpellCap cterm=underline ctermfg=blue
 
- if &spelllang == 'en_uk'
+ if &spelllang == 'en_gb'
    hi clear SpellBad
    hi SpellBad cterm=underline ctermfg=brown
    hi clear SpellCap "un-capitalised words

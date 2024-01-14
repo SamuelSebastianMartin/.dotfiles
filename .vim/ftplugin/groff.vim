@@ -5,6 +5,6 @@ setlocal linebreak
 set nobomb
 
 " Enable folding
-setlocal foldenable
-setlocal foldmethod=marker
-setlocal foldmarker=.NH,.NH
+" setlocal foldenable
+" setlocal foldmethod=marker
+" setlocal foldmarker=.NH,.NH

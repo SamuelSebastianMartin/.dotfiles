@@ -143,6 +143,15 @@ augroup groff_filetype
 augroup END
 
 
+"-------------- RECOGNIES .tex AS LaTeX ------------------"
+
+
+augroup tex_filetype
+    autocmd!
+    autocmd BufNewFile,BufRead *.tex set filetype=tex
+augroup END
+
+
 "----------------------- MISC ------------------------------"
 
 "Stop mouseclicks working. This means one can click on a Vim

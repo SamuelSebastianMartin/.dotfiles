@@ -160,6 +160,16 @@ ex ()
   fi
 }
 
+###########################################################
+##         Add key folders to the $PATH                  ##
+###########################################################
+
+# Add ~/.local/bin to PATH if it's not already included
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+
 ##################################
 # Added by Sam
 alias ll='ls -goshp --group-directories-first'

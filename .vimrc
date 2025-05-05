@@ -20,6 +20,14 @@ set expandtab
 
 
 "--------------------- REMAPPINGS -----------------------"
+" Set the leader key to backslash
+let mapleader = "\\"
+
+" Map `\o` to add a blank line below the current line
+nnoremap <leader>o :put!<CR>
+
+" Map \p to add a blank line above the current line
+nnoremap <leader>p :put!_<CR>
 
 "map jk or kj onto <Esc>
 "imap kj <Esc>
@@ -142,6 +150,10 @@ augroup groff_filetype
     autocmd BufNewFile,BufRead *.ms set filetype=groff
 augroup END
 
+" Let vim recognies groff files for syntax highlighting
+au BufNewFile,BufRead *.groff set filetype=groff
+au BufNewFile,BufRead *.mom set filetype=groff
+au BufNewFile,BufRead *.ms set filetype=groff
 
 "-------------- RECOGNIES .tex AS LaTeX ------------------"
 
@@ -169,8 +181,3 @@ highlight NonText guifg=bg
 set nobackup
 set noswapfile
 set nowritebackup
-
-" Let vim recognies groff files for syntax highlighting
-au BufNewFile,BufRead *.groff set filetype=groff
-au BufNewFile,BufRead *.mom set filetype=groff
-au BufNewFile,BufRead *.ms set filetype=groff

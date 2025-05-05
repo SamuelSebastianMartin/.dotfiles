@@ -24,10 +24,14 @@ set expandtab
 let mapleader = "\\"
 
 " Map `\o` to add a blank line below the current line
-nnoremap <leader>o :put!<CR>
+nnoremap <leader>o :execute "normal! o"<CR>
 
 " Map \p to add a blank line above the current line
 nnoremap <leader>p :put!_<CR>
+
+" Map \0 to add a blank line above and below the current line
+nnoremap <leader>0 :execute "normal! O"<CR>j:execute "normal! o"<CR>
+
 
 "map jk or kj onto <Esc>
 "imap kj <Esc>

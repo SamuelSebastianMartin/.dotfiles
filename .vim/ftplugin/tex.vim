@@ -9,9 +9,9 @@ setlocal noautoindent
 setlocal nosmartindent
 
 " Map <leader>i to insert itemize environment
-nnoremap <leader>i i\begin{itemize}<CR>\item<CR>\end{itemize}<Esc>j
-inoremap <leader>i \begin{itemize}<CR>\item<CR>\end{itemize}<Esc>j
+nnoremap <leader>i i\begin{itemize}<CR>\item<CR>\end{itemize}<Esc>k
+inoremap <leader>i \begin{itemize}<CR>\item<CR>\end{itemize}<Esc>k
 
 " Map <leader>e to insert itemize environment
-nnoremap <leader>e i\begin{enumerate}<CR>\item<CR>\end{enumerate}<Esc>j
-inoremap <leader>e \begin{itemize}<CR>\item<CR>\end{enumerate}<Esc>j
+nnoremap <leader>e i\begin{enumerate}<CR>\item<CR>\end{enumerate}<Esc>k
+inoremap <leader>e \begin{itemize}<CR>\item<CR>\end{enumerate}<Esc>k

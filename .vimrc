@@ -21,7 +21,7 @@ set expandtab
 
 "--------------------- REMAPPINGS -----------------------"
 " Set the leader key to backslash
-let mapleader = "\\"
+let mapleader = ";"
 
 " Map `\o` to add a blank line below the current line
 nnoremap <leader>o :execute "normal! o"<CR>

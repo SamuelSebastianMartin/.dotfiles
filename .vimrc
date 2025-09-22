@@ -144,7 +144,7 @@ hi SpellCap cterm=underline ctermfg=blue
    hi SpellCap cterm=underline ctermfg=blue
  endif
 
-"-------------- RECOGNIES .ms AS GROFF ------------------"
+"-------------- RECOGNISE .ms AS GROFF ------------------"
 
 " Even though groff is just ailased to nroff in
 " $VIMRUNTIME/syntax/groff.vim
@@ -159,7 +159,7 @@ au BufNewFile,BufRead *.groff set filetype=groff
 au BufNewFile,BufRead *.mom set filetype=groff
 au BufNewFile,BufRead *.ms set filetype=groff
 
-"-------------- RECOGNIES .tex AS LaTeX ------------------"
+"-------------- RECOGNISE .tex AS LaTeX ------------------"
 
 
 augroup tex_filetype
@@ -174,6 +174,10 @@ augroup END
 "window without jumping to the (random) line that was clicked.
 "Note: this does not disable other mouse commands.
 set ttymouse=
+
+"Stop mouse or touchpad working to avoid acidental touches
+set mouse=
+
 
 " 'compatible' with Vi is not set
 set nocp

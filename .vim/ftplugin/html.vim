@@ -23,6 +23,12 @@ inoremap ;h2 <h2></h2><Esc>F<i
 nnoremap ;h2 i<h2></h2><Esc>F<i
 inoremap ;p <p></p><Esc>F<i
 nnoremap ;p i<p></p><Esc>F<i
+inoremap ;ol <ol><CR><li></li><CR></ol><Esc>k0f>a
+nnoremap ;ol i<ol><CR><li></li><CR></ol><Esc>k0f>a
+inoremap ;ul <ul><CR><li></li><CR></ul><Esc>k0f>a
+nnoremap ;ul i<ul><CR><li></li><CR></ul><Esc>k0f>a
+inoremap ;li <li></li><Esc>F<i
+nnoremap ;li i<li></li><Esc>F<i
 inoremap ;a <a href="#"></a><Esc>F<i
 nnoremap ;a i<a href="#"></a><Esc>F<i
 inoremap ;s <table><CR><tr><CR></tr><CR></table><Esc>kO<td></td><Esc>F<i

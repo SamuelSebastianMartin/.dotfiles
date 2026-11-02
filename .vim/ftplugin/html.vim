@@ -17,6 +17,10 @@ set shiftwidth=2
 " Useful html tag mappings
 inoremap ;h <h1></h1><Esc>F<i
 nnoremap ;h i<h1></h1><Esc>F<i
+inoremap ;h1 <h1></h1><Esc>F<i
+nnoremap ;h1 i<h1></h1><Esc>F<i
+inoremap ;h2 <h2></h2><Esc>F<i
+nnoremap ;h2 i<h2></h2><Esc>F<i
 inoremap ;p <p></p><Esc>F<i
 nnoremap ;p i<p></p><Esc>F<i
 inoremap ;a <a href="#"></a><Esc>F<i
